@@ -43,7 +43,7 @@ const TransectionDashboard = () => {
     try {
       const queryParams = new URLSearchParams(query).toString();
       const response = await fetch(
-        `http://localhost:11007/api/v1/seed-data/get-all?${queryParams}`,
+        `https://intarn.onrender.com/api/v1/seed-data/get-all?${queryParams}`,
         {
           method: "GET",
           headers: {
@@ -75,7 +75,7 @@ const TransectionDashboard = () => {
     try {
       const queryParams = new URLSearchParams(date).toString();
       const response = await fetch(
-        `http://localhost:11007/api/v1/seed-data/monthly-data?${queryParams}`,
+        `https://intarn.onrender.com/api/v1/seed-data/monthly-data?${queryParams}`,
         {
           method: "GET",
           headers: {
