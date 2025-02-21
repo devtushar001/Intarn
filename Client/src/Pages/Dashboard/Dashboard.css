@@ -139,3 +139,105 @@
   color: #fff;
   font-size: 1.3rem;
 }
+
+
+@media (max-width: 1200px) {
+  .crud-operation .header-body,
+  .crud-operation .content-body {
+    grid-template-columns: 50px 150px 1fr 80px 150px 70px 120px;
+    font-size: 14px;
+  }
+
+  .btns {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .box {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .transection-dashboard .top {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .crud-operation .header-body,
+  .crud-operation .content-body {
+    grid-template-columns: 40px 130px 1fr 70px 130px 60px 100px;
+    font-size: 13px;
+  }
+
+  .btns button {
+    width: 90px;
+    font-size: 14px;
+  }
+
+  .box {
+    font-size: 1rem;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .crud-operation .header-body,
+  .crud-operation .content-body {
+    grid-template-columns: 30px 100px 1fr 60px 100px 50px 80px;
+    font-size: 12px;
+  }
+
+  .transection-dashboard .top select,
+  .transection-dashboard .top input {
+    width: 100%;
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .btns {
+    grid-template-columns: 1fr;
+    gap: 5px;
+  }
+
+  .btns button {
+    width: 100%;
+  }
+
+  .box {
+    font-size: 0.9rem;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .crud-operation {
+    padding: 15px;
+  }
+
+  .crud-operation .header-body,
+  .crud-operation .content-body {
+    grid-template-columns: 1fr;
+    font-size: 11px;
+    text-align: center;
+  }
+
+  .crud-operation .content-body div {
+    padding: 7px;
+  }
+
+  .transection-dashboard .top {
+    flex-direction: column;
+  }
+
+  .box {
+    font-size: 0.85rem;
+    padding: 10px;
+  }
+
+  .btns button {
+    font-size: 12px;
+    padding: 5px;
+  }
+}
+
